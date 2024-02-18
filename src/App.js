@@ -13,7 +13,7 @@ import PropertyDetails from './pages/PropertyDetails';
 
 const App = () => {
   return (
-    <div className='max-w-[1440px] mx-auto bg-blue'>
+    <div className='max-w-[1440px] mx-auto bg-yellow-100'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
