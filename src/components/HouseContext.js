@@ -21,7 +21,13 @@ const HouseContextProvider = ({ children }) => {
       return house.country;
       });
       console.log(allCountries);
-  })
+      // remove duplicates
+      const uniqueCountries = ['Location(any)', ...new Set(allCountries)]
+      console.log(uniqueCountries);
+      // set countries state
+      setCountries(uniqueCountries);
+
+  }, []);
 
 
 
