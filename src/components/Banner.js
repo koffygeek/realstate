@@ -24,12 +24,13 @@ const Banner = () => {
         </p>
       </div>
       {/* image */}
-      <div className='hidden flex-1 lg:flex justify-end items-end'>
+      <div className='hidden flex-1 lg:flex justify-end items-end '>
         <img src={Image} alt='' />
       </div>
     </div>
     <Search />
-    </section>)
+    </section>
+    )
   ;
 };
 
