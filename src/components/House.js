@@ -12,11 +12,11 @@ const House = ({ house }) => {
       <div className='mb-4 flex gap-x-2 text-sm' >
         <div className='bg-green-500 rounded-full text-white px-3'>{type}</div>
         <div className='bg-violet-500 rounded-full text-white px-3'>
-        {country}            
-    </div>
+          {country}            
+        </div>
     </div>    
     <div className='text-lg font-semibold max-w-[260px]'>{address}</div>
-    <div>
+    <div className='flex gap-x-4 my-4'>
       <div className='flex items-center text-gray-600 gap-1'>
         <div className='text-[20px]'>
           <BiBed />
