@@ -41,9 +41,23 @@ const HouseContextProvider = ({ children }) => {
       setProperties(uniqueProperties);
   }, []);
 
-  const handleClick = ()=> {
-    console.log('clicked')
-  }
+  const handleClick = ()=> { 
+    // creat a function that checks if the string includes '(any)'
+    const isDefault = (str) => {
+      return str.split(' ').includes('(any)');
+    };
+
+    // get first value of price and parse it to number
+    const minPrice = parseInt(price.split(' ')[0]);
+    // get second value of price which is the maximum price & parse it to number
+    const maxPrice = parseInt(price.split(' ')[2]);
+
+    const newHouses = housesData.filter((house) => {
+      console.log(house.price);
+    }); 
+
+    return newHouses;
+  };
 
   return (
     <HouseContext.Provider
